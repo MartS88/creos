@@ -9,14 +9,14 @@ import { Designer } from '../../types/designer.ts';
 
 
 const DesignerPage = () => {
-  const { allDesigners } = useContext(AuthContext);
+  const { allDesigners,locale } = useContext(AuthContext);
   const allTasks = allDesigners.flatMap((designer: Designer) => designer.issues);
 
   return (
     <Layout>
       <div className={classes.designer_page} id="scroll_up">
         <div className={classes.designer_chart_container}>
-          <h2>Task Status Distribution</h2>
+          <h2>{locale === 'RU' ? 'Статус задач' : 'Task Status Distribution'}</h2>
           <DesignerChart tasks={allTasks} />
         </div>
         <div className={classes.designer_table_container}>
