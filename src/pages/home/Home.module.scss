@@ -1,0 +1,70 @@
+.loader{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loader_block {
+    align-self: center;
+  }
+  .error_title {
+    font-size: 1rem;
+    font-family: 'Prompt';
+    color:red;
+  }
+}
+
+
+
+.home {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+
+  .sort_buttons {
+    justify-content: start;
+    padding-top: 50px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    .active {
+      border: 1px solid gray;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+      font-family: 'Roboto';
+      font-weight: 400;
+      border-radius: 5px;
+      border: 1.5px solid whitesmoke;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color:silver;
+        border: 1px solid silver;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid gray;
+      }
+    }
+  }
+  .list {
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 20px;
+      grid-auto-rows: auto;
+  }
+}

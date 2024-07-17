@@ -1,0 +1,28 @@
+.designer_page {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 50px;
+
+  .designer_chart_container {
+    padding-top: 50px;
+    margin-bottom: 40px;
+    align-self: center;
+
+    h2 {
+      font-size: 1rem;
+      font-family: 'Prompt';
+      text-align: center;
+    }
+  }
+
+  .designer_table_container {
+
+  }
+
+
+}

@@ -1,0 +1,46 @@
+.comment_item {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  transition: all .3s ease-in-out;
+  border: 1.5px solid whitesmoke;
+  padding: 20px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1019607843);
+    border: 1.5px solid rgba(0, 0, 0, 0.1019607843);
+    border-radius: 30px;
+  }
+   .comment_item_block {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+     span {
+       text-align: center;
+       font-size: 1rem;
+       font-family: 'Prompt';
+       color:silver;
+     }
+
+
+    .comment_item_block_img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .comment_item_name {
+      font-size: 1.3rem;
+      font-family: "Prompt";
+      font-weight: 400;
+      color: black;
+    }
+
+  }
+}

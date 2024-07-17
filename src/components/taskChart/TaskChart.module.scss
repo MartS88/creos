@@ -1,0 +1,69 @@
+
+
+.task_chart_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  h2,label {
+    font-size: 1rem;
+    font-family: 'Prompt';
+    margin-bottom: 20px;
+    color: silver;
+  }
+
+  .charts_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .chart_wrapper {
+    padding: 20px;
+  }
+
+  label {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      margin-top: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  }
+
+  .loader_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .error_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .errorTitle {
+      color: red;
+      font-size: 1.5rem;
+    }
+  }
+
+  .chart_canvas {
+    width: 100%;
+    height: 50vw;
+    max-height: 300px;
+  }
+}

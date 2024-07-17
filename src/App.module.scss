@@ -1,0 +1,14 @@
+.loader{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: gray;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .loader_block {
+    align-self: center;
+  }
+}
+

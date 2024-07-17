@@ -1,0 +1,152 @@
+.scroll_container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+
+  span {
+    font-size: 1rem;
+    font-family: 'Prompt';
+    color:silver;
+    text-transform: uppercase;
+  }
+}
+.loader_block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load_more_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .load_more_button {
+    width: auto;
+    height: 30px;
+    padding: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 8px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    cursor: pointer;
+    line-height: 18px;
+    font-size: 1.1rem;
+    font-family: 'Prompt';
+    color: black;
+    background: white;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    transition: all 0.5s ease!important;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(0.95) translateZ(0)!important;
+    }
+
+
+    &:hover {
+      background: whitesmoke;
+    }
+  }
+}
+
+.designer_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+
+
+
+  thead {
+    background-color: #f4f4f4;
+
+
+    th {
+      font-size: 1rem;
+      font-family: 'Prompt';
+      padding: 12px 15px;
+      text-align:center;
+      cursor: pointer;
+
+    }
+  }
+
+  tbody {
+
+    tr {
+      border-bottom: 1.5px solid whitesmoke;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        background: #f4f4f4;
+
+      }
+
+      &:nth-of-type(even) {
+
+      }
+
+      &:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+    }
+
+    td {
+      font-size: 1rem;
+      font-family: 'Prompt';
+      padding: 12px 15px;
+      text-align: center;
+
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    thead {
+      display: none;
+    }
+
+    tbody, tr, td {
+      display: block;
+      width: 100%;
+    }
+
+    tr {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+
+      &::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: bold;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
